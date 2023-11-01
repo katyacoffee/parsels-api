@@ -1,5 +1,4 @@
 from django.db import models
-from enum import Enum
 
 
 class Letters(models.Model):
@@ -33,13 +32,6 @@ class Parcels(models.Model):
         (4, 'Valuable_parcel'),
         (5, 'International_parcel'),
         (6, 'Express_parcel'),
-
     ]
-    # type_parcel = models.IntegerField()
-    weight_letter = models.FloatField()
+    weight_parcel = models.FloatField()
 
-    # class TypeParcel(Enum):
-    #     SMALL = 1
-    #     CUSTOM_LETTER = 2
-    #     VALUABLE_LETTER = 3
-    #     EXPRESS_LETTER = 4
